@@ -1,0 +1,2 @@
+# ConPTY captures: the exact bytes matter (lone carriage returns, \r\n), never convert line ends.
+*.vt binary

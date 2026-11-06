@@ -1,0 +1,12 @@
+80x24
+[1t[c[?1004h[?9001h[?7l[?7hMicrosoft Windows [version 10.0.26300.9711]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\Codeur\Dev\Terminal>[4;30Hecho one[4;38H[4;38H
+]0;C:\Windows\system32\cmd.exe - echo  one\one
+]0;C:\Windows\system32\cmd.exe\
+C:\Users\Codeur\Dev\Terminal>[7;30Hcd[7;32H[7;32H
+]0;C:\Windows\system32\cmd.exe - cd\C:\Users\Codeur\Dev\Terminal
+]0;C:\Windows\system32\cmd.exe\
+C:\Users\Codeur\Dev\Terminal>[10;30Hexit[10;34H[10;34H
+]0;C:\Windows\system32\cmd.exe - exit\]0;C:\Windows\system32\cmd.exe\

@@ -1,0 +1,44 @@
+{
+  "program": "",
+  "launch_mode": "tui",
+  "interpreter": "cmd",
+  "prompt_prefix": "# ",
+  "terminal_size": "auto",
+  "terminal_view_only": false,
+  "stderr_prefix": true,
+  "variables": [],
+  "commands": [
+    {
+      "text": "chkdsk",
+      "use": "shell"
+    },
+    {
+      "text": "help",
+      "use": "shell"
+    },
+    {
+      "text": "ipconfig /all",
+      "use": "shell"
+    },
+    {
+      "text": "netstat -ano",
+      "use": "shell"
+    },
+    {
+      "text": "systeminfo",
+      "use": "shell"
+    },
+    {
+      "text": "tasklist",
+      "use": "shell"
+    },
+    {
+      "text": "tracert {name}",
+      "use": "shell"
+    },
+    {
+      "text": "ver",
+      "use": "shell"
+    }
+  ]
+}

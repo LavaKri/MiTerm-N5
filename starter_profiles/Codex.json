@@ -1,0 +1,33 @@
+{
+  "program": "codex",
+  "launch_mode": "tui",
+  "interpreter": "none",
+  "terminal_size": "auto",
+  "terminal_view_only": false,
+  "stderr_prefix": true,
+  "variables": [],
+  "commands": [
+    "\"{message}\"",
+    "--help",
+    "--version",
+    {
+      "text": "/init",
+      "use": "program"
+    },
+    {
+      "text": "/model",
+      "use": "program"
+    },
+    {
+      "text": "/permissions",
+      "use": "program"
+    },
+    {
+      "text": "/status",
+      "use": "program"
+    },
+    "login",
+    "login status",
+    "logout"
+  ]
+}

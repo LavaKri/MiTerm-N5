@@ -1,0 +1,19 @@
+{
+  "program": "npm",
+  "launch_mode": "cli",
+  "interpreter": "none",
+  "terminal_size": "auto",
+  "terminal_view_only": false,
+  "stderr_prefix": true,
+  "variables": [],
+  "commands": [
+    "init",
+    "install",
+    "install {source}",
+    "list",
+    "run {name}",
+    "start",
+    "test",
+    "uninstall {name}"
+  ]
+}

@@ -1,0 +1,7 @@
+80x24
+[1t[c[?1004h[?9001hCollecting six
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Would install six-1.17.0
+
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m26.2.1[0m[39;49m -> [0m[32;49m26.2.2[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mC:\Users\Codeur\Dev\Terminal\.venv\Scripts\python.exe -m pip install --upgrade pip[0m

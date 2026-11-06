@@ -1,0 +1,13 @@
+{
+  "program": "node",
+  "launch_mode": "cli",
+  "interpreter": "none",
+  "terminal_size": "auto",
+  "terminal_view_only": false,
+  "stderr_prefix": true,
+  "variables": [],
+  "commands": [
+    "--help",
+    "-v"
+  ]
+}

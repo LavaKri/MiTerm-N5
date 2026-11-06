@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MiTerm-N5 Help</title>
+</head>
+<body>
+<h1>MiTerm-N5 Help</h1>
+<h2>General description</h2>
+<p>MiTerm-N5 is a terminal application that can be used with a screen reader.
+The goal is not to provide a universal terminal, but rather:</p>
+<ul>
+<li>to use command-line applications (CLI) comfortably;</li>
+<li>to make programs in terminal mode (TUI) easier to use;</li>
+<li>to allow following a progress or an update of a result;</li>
+<li>to be able to select and confirm a choice with the keyboard;</li>
+<li>to read and browse the output of programs freely, whatever the pace at which it is displayed;</li>
+<li>to keep a history, which allows going back to the information displayed earlier.</li>
+</ul>
+<h2>Session</h2>
+<p>A session is a set of settings defined in the window of the application.
+It is limited to running one program at a time, but it is possible to open several application windows.</p>
+<p>Before you run a program, you choose its mode.
+The CLI mode suits most commands: the program reads and writes text.
+The TUI mode suits programs that need a real terminal: python, ssh, passwords.
+The mode is chosen by the user, never guessed.</p>
+<p>You can also select an interpreter, Cmd or PowerShell.
+A shell is always in TUI mode.</p>
+<p>The working folder is the one where the program starts.
+You can change it as long as no program is running.</p>
+<h2>Profile</h2>
+<p>A profile stores the settings of a program that you use often.
+It contains the program, the mode, the interpreter, the size of the terminal and a list of common commands.
+With a program, the common commands no longer have to repeat it: <code>status</code> is enough for <code>git status</code>.
+The list says only the name of the program, and the command field receives the full path.</p>
+<p>You choose a profile yourself.
+MiTerm-N5 never applies one on its own.
+With no profile chosen, the session is &quot;Free&quot;.</p>
+<p>The common commands of a profile are added to the list of typed commands.
+They can contain variables, written between braces: <code>{name}</code>, <code>{source}</code>, <code>{destination}</code>, <code>{value1}</code>, <code>{value2}</code>, <code>{comment}</code>, <code>{ip}</code>, <code>{message}</code>.
+You give their value in the variables dialog, and they replace the braces in the list.</p>
+<p>A <code>git</code> profile is provided as an example.
+You can add, edit and delete your profiles.
+Each profile is a small file: you can copy it to another computer.</p>
+<h2>Using the application</h2>
+<p>The window has three parts:</p>
+<ul>
+<li>An output area, at the top: you read what the program writes in it.</li>
+<li>A command area, at the bottom: you type a command in it, then Enter to send it.</li>
+<li>A status bar, showing the line, the column and the state of the program.</li>
+</ul>
+<h3>Running and following a program</h3>
+<p>Type the command in the command field, then Enter.
+The focus moves automatically to the output area, on the line of the command.
+To send other commands, you must go back to the command area.
+Some keys or keyboard shortcuts can be sent directly to the program from this area.</p>
+<p>The end of the program is announced with its exit code.</p>
+<h3>Command area</h3>
+<p>The label of the input field tells how the text is used:</p>
+<ul>
+<li>Command: the text is a command. At rest, it runs a program; in an open shell (Cmd, PowerShell) or with a connection, it is sent to the shell.</li>
+<li>Message: the text is sent as is to the running program (an answer to a question, for example).</li>
+<li>The name of the profile (&quot;Git&quot;): the text becomes the arguments of the profile's program, which is run when you send it. So an empty field runs the program alone.</li>
+</ul>
+<p>A history of the last commands, as well as the commands of the profile, can be brought up from this input field.</p>
+<p>The check box that masks the typed text is cleared automatically after a send.
+A masked text is not stored in the history.</p>
+<p>The main input field can contain only one line.
+To send several lines, use the multi-line input box.</p>
+<h3>Output area</h3>
+<p>The output arrives silently:</p>
+<ul>
+<li>The text that is added or changed is not announced;</li>
+<li>neither the focus nor the text caret is changed;</li>
+<li>you read when you decide to.</li>
+<li>the oldest messages are found by going up in the text.</li>
+</ul>
+<p>Reading and searching the content are done with the usual keys.
+However, some features can make browsing the content easier:</p>
+<ul>
+<li>moving from heading to heading, especially for the CMD and PowerShell profiles.</li>
+<li>help to identify some elements, such as progress bars, choices, links, ...</li>
+<li>comfortable reading, by limiting redundant texts. By default the common command prompts, but you can add other detection patterns.</li>
+</ul>
+<p>The output of programs in error starts with &quot;StdErr:&quot;: it is recognized by its text, not by its color.</p>
+<h4>Interactive programs</h4>
+<p>In TUI mode, you can send the program keys that the command field does not pass on: arrows, Esc, Tab, function keys.
+This is useful for menus and lists of choices.
+The Session menu offers these keys, and you can give them a shortcut.</p>
+<p>The terminal cursor is where the program waits for your input.</p>
+<h4>Activities</h4>
+<p>Many programs write progress bars, ask a question or show a choice.
+MiTerm-N5 recognizes these elements in the lines of the output.
+It recognizes progress, questions, choices and errors.</p>
+<p>Three functions rely on this recognition.
+Read the line with formatting says the line of the text caret more clearly: &quot;Download, 60 %&quot;.
+Identify activities lists what is recognized on the screen, and takes you to the line you choose.
+Signal activities warns you when the output changes.</p>
+<p>The activity signal is set in the Preferences, on the Announcements page.
+By default, MiTerm-N5 checks every second whether the output has changed.
+If the line of the caret is a recognized element, it says it.
+Otherwise, it plays a beep, to signal a change.
+If the beep bothers you, turn the signal off with a shortcut.</p>
+<h3>Status bar and announcements</h3>
+<p>MiTerm-N5 announces only what matters: the start and end of a program, errors, refused commands.
+You can choose, for each category, whether it is said, ignored or shown in a dialog box.</p>
+<p>The status bar has three information fields:</p>
+<ul>
+<li>Position of the line</li>
+<li>state of operation</li>
+<li>Position of the column</li>
+</ul>
+<h2>Connection</h2>
+<p>A connection defines where what you run is executed: on this computer, or on a server.</p>
+<ul>
+<li>&quot;Local&quot; is the default choice: programs run on this computer.</li>
+<li>The other choices are connections to servers.
+When a connection is chosen, all commands are sent to its server.
+The working folder, the interpreter and the mode are therefore no longer available.
+Sending a command automatically opens a connection.</li>
+</ul>
+<h3>SSH</h3>
+<p>By default, MiTerm-N5 uses the OpenSSH ssh.exe program, which comes with Windows.
+Authentication can be done in two ways.</p>
+<ul>
+<li>By password: a dialog box shows the server and asks for the password, in a masked field.</li>
+<li>By key: ssh finds your key by itself and asks no question.</li>
+</ul>
+<p>The first time you connect to a server, ssh shows its fingerprint and asks whether you trust it.
+Cancelling a dialog is not an error: the connection simply stops.
+MiTerm-N5 keeps no password and copies no key.</p>
+<p>Where the keys are:</p>
+<ul>
+<li>The server key, the one you accepted, is written by ssh in the <code>known_hosts</code> file of the <code>.ssh</code> folder of your Windows profile (<code>%USERPROFILE%\.ssh\known_hosts</code>).
+In portable mode, it is in the <code>data\known_hosts</code> file, next to the application.</li>
+<li>Your private key is a file in the same <code>.ssh</code> folder, for example <code>id_ed25519</code>, next to its public key <code>id_ed25519.pub</code>, the one you copy to the server.
+Never share the private key.
+The <code>ssh-keygen</code> profile can help you create it.</li>
+</ul>
+<h2>Usage limits</h2>
+<ul>
+<li>
+<p>MiTerm-N5 works only on Windows.</p>
+</li>
+<li>
+<p>It does not run graphical programs, which open their own window.</p>
+</li>
+<li>
+<p>It does not support full-screen programs such as <code>vim</code> or <code>htop</code>.
+They start, but their screen is not read as a grid.
+The keyboard is not passed to them directly.</p>
+</li>
+<li>
+<p>The output has a limit on the number of lines, which can be set in the Preferences.
+The oldest lines are dropped, and MiTerm-N5 tells you so.</p>
+</li>
+<li>
+<p>An export may contain secrets: read it again before sharing it.</p>
+</li>
+<li>
+<p>A line longer than the screen is read as several lines, as in an ordinary terminal.
+MiTerm-N5 then enlarges the terminal if you chose the automatic size.</p>
+</li>
+<li>
+<p>The recognition of activities reads the text, not the colors.
+It can be wrong or see nothing.
+A password that is typed writes nothing: the question is still recognized after the answer.</p>
+</li>
+<li>
+<p>A program that is run keeps the rights of the user.
+MiTerm-N5 does not protect against a dangerous command.</p>
+</li>
+</ul>
+<h2>Launch file (.n5term)</h2>
+<p>A file with the <code>.n5term</code> extension opens a session that is already set up.
+You only have to pass it to the application, or double-click it, after an association.
+The association button in the Preferences, General page, makes MiTerm-N5 open these files.</p>
+<p>It is a text file, with one key and its value per line.
+Lines that start with <code>;</code> or <code>#</code> are comments.</p>
+<p>The required key:</p>
+<ul>
+<li><code>profile</code>: the name of the profile to choose.</li>
+</ul>
+<p>The other possible keys are:</p>
+<ul>
+<li><code>WorkingPath</code>: the working folder;</li>
+<li>the name of a variable of the profile (<code>name</code>, <code>source</code>, <code>comment</code>, <code>message</code>…): its value.</li>
+</ul>
+<p>Example:</p>
+<pre><code>profile = git
+WorkingPath = C:\Projects\my-project
+source = origin
+</code></pre>
+<p>If no value is set for <code>WorkingPath</code>, the session starts in the folder of the file.
+A relative path is read from that folder.</p>
+<p>The file runs no command.</p>
+<h2>Local mode and portable mode</h2>
+<p>In local mode, MiTerm-N5 stores its data in your Windows profile.
+The settings and the profiles are in <code>%APPDATA%\MiTerm-N5</code>.
+The log is in <code>%LOCALAPPDATA%\MiTerm-N5\Logs</code>.</p>
+<p>The portable mode suits a USB key.
+It leaves no trace on the host computer.
+Settings, profiles and log are in a <code>data</code> folder, next to the executable.</p>
+<p>To switch to portable mode, put an empty file named <code>portable</code> next to the executable.
+You can also specify a data folder with the <code>--data-folder</code> option.</p>
+</body>
+</html>

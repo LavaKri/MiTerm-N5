@@ -1,0 +1,28 @@
+{
+  "program": "claude",
+  "launch_mode": "tui",
+  "interpreter": "none",
+  "terminal_size": "auto",
+  "terminal_view_only": false,
+  "stderr_prefix": true,
+  "variables": [],
+  "commands": [
+    "--help",
+    "--version",
+    {
+      "text": "/help",
+      "use": "program"
+    },
+    {
+      "text": "/init",
+      "use": "program"
+    },
+    {
+      "text": "/status",
+      "use": "program"
+    },
+    "auth login",
+    "auth logout   ",
+    "auth status   "
+  ]
+}

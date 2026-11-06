@@ -1,0 +1,72 @@
+{
+  "program": "",
+  "launch_mode": "cli",
+  "interpreter": "powershell",
+  "prompt_prefix": "# ",
+  "terminal_size": "auto",
+  "terminal_view_only": false,
+  "stderr_prefix": true,
+  "variables": [
+    "name",
+    "value1",
+    "ip"
+  ],
+  "commands": [
+    {
+      "text": "Get-ChildItem",
+      "use": "shell"
+    },
+    {
+      "text": "Get-Command",
+      "use": "shell"
+    },
+    {
+      "text": "Get-ComputerInfo",
+      "use": "shell"
+    },
+    {
+      "text": "Get-Content $env:USERPROFILE\\.ssh\\id_ed25519.pub | ssh {name}@{ip} \"mkdir -p ~/.ssh && tr -d '\\r' >> ~/.ssh/authorized_keys && chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys\"",
+      "use": "shell"
+    },
+    {
+      "text": "Get-ExecutionPolicy",
+      "use": "shell"
+    },
+    {
+      "text": "Get-Help",
+      "use": "shell"
+    },
+    {
+      "text": "Get-Location",
+      "use": "shell"
+    },
+    {
+      "text": "Get-NetIPAddress",
+      "use": "shell"
+    },
+    {
+      "text": "Get-Process",
+      "use": "shell"
+    },
+    {
+      "text": "Get-Service",
+      "use": "shell"
+    },
+    {
+      "text": "ipconfig /all",
+      "use": "shell"
+    },
+    {
+      "text": "ssh {name}@{ip} \"cat -n ~/.ssh/authorized_keys\"",
+      "use": "shell"
+    },
+    {
+      "text": "ssh {name}@{ip} \"sed -i.bak '{value1}d' ~/.ssh/authorized_keys\"",
+      "use": "shell"
+    },
+    {
+      "text": "Test-NetConnection",
+      "use": "shell"
+    }
+  ]
+}

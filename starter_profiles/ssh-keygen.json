@@ -1,0 +1,23 @@
+{
+  "program": "ssh-keygen",
+  "launch_mode": "tui",
+  "interpreter": "none",
+  "terminal_size": "auto",
+  "terminal_view_only": false,
+  "stderr_prefix": true,
+  "variables": [
+    "name",
+    "source",
+    "comment"
+  ],
+  "commands": [
+    "-F {name}",
+    "-l -f \"{source}\"",
+    "-p -f \"{source}\"",
+    "-R {name}",
+    "-t ed25519 -C \"{comment}\"",
+    "-t ed25519 -f \"{source}\" -C \"{comment}\"",
+    "-t rsa -b 4096 -C \"{comment}\"",
+    "-y -f \"{source}\""
+  ]
+}

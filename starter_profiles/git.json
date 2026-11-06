@@ -1,0 +1,25 @@
+{
+  "program": "git",
+  "launch_mode": "cli",
+  "interpreter": "none",
+  "terminal_size": "auto",
+  "terminal_view_only": false,
+  "stderr_prefix": true,
+  "variables": [
+    "source",
+    "message"
+  ],
+  "commands": [
+    "add {source}",
+    "clone {source}",
+    "commit -m \"{message}\"",
+    "diff",
+    "help",
+    "init",
+    "log",
+    "pull",
+    "push",
+    "show",
+    "status"
+  ]
+}

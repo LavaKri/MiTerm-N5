@@ -1,0 +1,8 @@
+80x24
+[1t[c[?1004h[?9001herror: file not found
+warning: using the default
+Access is denied.
+Traceback (most recent call last):
+  File [35m"<string>"[0m, line [35m5[0m, in [35m<module>[0m
+    raise ValueError('boom')
+[1;35mValueError[0m: [35mboom[0m

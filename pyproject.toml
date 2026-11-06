@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "n5terminal"
+dynamic = ["version"]  # the single source is __version__ in src/n5terminal/__init__.py
+description = "Screen-reader-friendly terminal application (wxPython)."
+requires-python = ">=3.14"
+dependencies = [
+    "wxPython>=4.3",
+    "platformdirs>=4",
+    "markdown-it-py>=3",
+    "pywinpty>=3",
+    "pyte>=0.8.2",
+    "Babel",  # core/config/catalogs.py, imported by the develop mode editor of the catalogs
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "pyinstaller",
+]
+
+[project.scripts]
+n5terminal-askpass = "n5terminal.askpass:main"  # a console program: ssh runs it (SSH_ASKPASS)
+
+[project.gui-scripts]
+n5terminal = "n5terminal.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "n5terminal.__version__"}
+
+[tool.setuptools.package-data]
+n5terminal = ["locale/*/LC_MESSAGES/*.mo"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E", "F", "W", "I", "N", "UP", "B", "SIM", "C4", "PT", "RUF",
+    "C901", "PLR0911", "PLR0912", "PLR0913", "PLR0915",
+    "PLC0415", "BLE001", "ERA001", "PTH", "PERF", "RET", "TRY203", "TRY300", "TRY301",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["n5terminal", "fakes"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/n5terminal/ui/*" = ["PLR0913"]
+"tests/*" = ["PLR0913"]
+
+[tool.mypy]
+python_version = "3.14"
+mypy_path = "src"
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = ["n5terminal.core.*", "n5terminal.presenters.*"]
+strict = true
+
+[[tool.mypy.overrides]]
+module = "n5terminal.ui.*"
+disallow_subclassing_any = false
+
+[[tool.mypy.overrides]]
+module = ["wx", "wx.*", "setuptools.*", "winpty", "winpty.*", "pyte", "pyte.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]  # the fakes are imported as `fakes.*`
+markers = [
+    "unit: pure logic tests",
+    "ui: tests that need wx",
+    "slow: slow tests",
+]

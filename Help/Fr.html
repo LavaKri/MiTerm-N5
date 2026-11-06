@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Aide de MiTerm-N5</title>
+</head>
+<body>
+<h1>Aide de MiTerm-N5</h1>
+<h2>Description générale</h2>
+<p>MiTerm-N5 est une application de terminal, accessible avec un lecteur d'écran.
+L'objectif n'est pas de fournir un terminal universel, mais plutôt :</p>
+<ul>
+<li>d'utiliser confortablement des applications en ligne de commande (CLI) ;</li>
+<li>de faciliter l'utilisation de programmes en mode terminal (TUI) ;</li>
+<li>de permettre le suivi d'une progression ou d'une mise à jour d'un résultat ;</li>
+<li>de pouvoir sélectionner et valider un choix au clavier ;</li>
+<li>de lire et parcourir librement la sortie des programmes, indépendamment de leur rythme d'affichage ;</li>
+<li>de conserver un historique, permettant de revenir sur les informations affichées précédemment.</li>
+</ul>
+<h2>Session</h2>
+<p>Une session est un ensemble de paramètres définis dans la fenêtre de l'application.
+Elle est limitée au lancement d'un seul programme à la fois, mais il est possible d'ouvrir plusieurs fenêtres d'application.</p>
+<p>Avant de lancer un programme, vous choisissez son mode.
+Le mode CLI convient à la plupart des commandes : le programme lit et écrit du texte.
+Le mode TUI convient aux programmes qui ont besoin d'un vrai terminal : python, ssh, les mots de passe.
+Le mode est choisi par l'utilisateur, jamais deviné.</p>
+<p>Vous pouvez aussi sélectionner un interpréteur, Cmd ou PowerShell.
+Un shell est toujours en mode TUI.</p>
+<p>Le dossier de travail est celui où le programme démarre.
+Vous pouvez le changer tant qu'aucun programme ne tourne.</p>
+<h2>Profil</h2>
+<p>Un profil range les réglages d'un programme que vous utilisez souvent.
+Il contient le programme, le mode, l'interpréteur, la taille du terminal et une liste de commandes courantes.
+Avec un programme, les commandes courantes n'ont plus à le répéter : <code>status</code> suffit pour <code>git status</code>.
+La liste dit seulement le nom du programme, et le champ de commande reçoit le chemin complet.</p>
+<p>Vous choisissez un profil vous-même.
+MiTerm-N5 n'en applique jamais un tout seul.
+Sans profil choisi, la session est « Libre ».</p>
+<p>Les commandes courantes d'un profil s'ajoutent à la liste des commandes tapées.
+Elles peuvent contenir des variables, écrites entre accolades : <code>{name}</code>, <code>{source}</code>, <code>{destination}</code>, <code>{value1}</code>, <code>{value2}</code>, <code>{comment}</code>, <code>{ip}</code>, <code>{message}</code>.
+Vous donnez leur valeur dans le dialogue des variables, et elles remplacent les accolades dans la liste.</p>
+<p>Un profil <code>git</code> est fourni en exemple.
+Vous pouvez ajouter, modifier et supprimer vos profils.
+Chaque profil est un petit fichier : vous pouvez le copier sur une autre machine.</p>
+<h2>Utilisation de l'application</h2>
+<p>La fenêtre a trois parties :</p>
+<ul>
+<li>Une zone de sortie, en haut : on y lit ce que le programme écrit.</li>
+<li>Une zone de commande, en bas : on y tape une commande, puis Entrée pour l'envoyer.</li>
+<li>Une barre d'état, indiquant la ligne, la colonne et l'état du programme.</li>
+</ul>
+<h3>Lancer et suivre un programme</h3>
+<p>Tapez la commande dans le champ de commande, puis Entrée.
+Le focus passe automatiquement dans la zone de sortie, sur la ligne de la commande.
+Pour envoyer d'autres commandes il faut retourner dans la zone de commande.
+Certaines touches ou raccourcis clavier peuvent être envoyés directement au programme depuis cette zone.</p>
+<p>La fin du programme est annoncée avec son code de sortie.</p>
+<h3>Zone de commande</h3>
+<p>L'intitulé du champ de saisie indique comment est utilisé le texte :</p>
+<ul>
+<li>Commande : le texte est une commande. Au repos, il lance un programme ; dans un shell ouvert (Cmd, PowerShell) ou avec une connexion, il est envoyé dans le shell.</li>
+<li>Message : le texte est envoyé tel quel au programme qui tourne (une réponse à une question, par exemple).</li>
+<li>Le nom du profil (« Git ») : le texte devient les arguments du programme du profil, qui est lancé à l'envoi. Donc, un champ vide lance le programme seul.</li>
+</ul>
+<p>Un historique des dernières commandes, ainsi que des commandes du profil, peut être invoqué depuis ce champ de saisie.</p>
+<p>La case à cocher, pour masquer le texte saisi, se désactive automatiquement après un envoi.
+Un texte masqué n'est pas mémorisé dans l'historique.</p>
+<p>Le champ de saisie principal ne peut contenir qu'une seule ligne.
+Pour envoyer plusieurs lignes, il faut utiliser la boîte de saisie multi-lignes.</p>
+<h3>Zone de sortie</h3>
+<p>La sortie arrive en silence :</p>
+<ul>
+<li>Le texte ajouté ou modifié n'est pas annoncé ;</li>
+<li>ni le focus ni le curseur de texte ne sont changés ;</li>
+<li>vous lisez quand vous le décidez.</li>
+<li>les messages les plus anciens se trouvent en remontant dans le texte.</li>
+</ul>
+<p>La lecture et la recherche de contenu se font avec les touches classiques.
+Cependant, certaines fonctionnalités peuvent faciliter la consultation du contenu :</p>
+<ul>
+<li>les déplacements de titre en titre, notamment pour les profils CMD et PowerShell.</li>
+<li>une aide pour l'identification de certains éléments, tels que barre de progression, choix, liens, ...</li>
+<li>une lecture confortable, en limitant les textes redondants. Par défaut les invites de commandes courantes, mais vous pourrez ajouter d'autres motifs de détection.</li>
+</ul>
+<p>La sortie des programmes en erreur commence par « StdErr: » : on la distingue par le texte, pas par la couleur.</p>
+<h4>Programmes interactifs</h4>
+<p>En mode TUI, vous pouvez envoyer au programme des touches que le champ de commande ne transmet pas : flèches, Échap, Tab, touches de fonction.
+C'est utile pour les menus et les listes de choix.
+Le menu Session propose ces touches, et vous pouvez leur donner un raccourci.</p>
+<p>Le curseur du terminal est là où le programme attend votre saisie.</p>
+<h4>Les activités</h4>
+<p>Beaucoup de programmes écrivent des barres de progression, posent une question ou affichent un choix.
+MiTerm-N5 reconnaît ces éléments dans les lignes de la sortie.
+Il reconnaît les progressions, les questions, les choix et les erreurs.</p>
+<p>Trois fonctions s'appuient sur cette reconnaissance.
+Lire la ligne avec mise en forme dit la ligne du curseur de texte de façon plus claire : « Téléchargement, 60 % ».
+Identifier des activités liste ce qui est reconnu à l'écran, et vous emmène sur la ligne choisie.
+Signaler les activités vous prévient quand la sortie change.</p>
+<p>Le signal d'activité se règle dans les Préférences, à la page Annonces.
+Par défaut, MiTerm-N5 vérifie chaque seconde si la sortie a changé.
+Si la ligne du curseur est un élément reconnu, il la dit.
+Sinon, il joue un bip, pour signaler un changement.
+Si le bip vous gêne, coupez le signal avec un raccourci.</p>
+<h3>Barre d'état et annonces</h3>
+<p>MiTerm-N5 n'annonce que ce qui compte : début et fin d'un programme, erreurs, commandes refusées.
+Vous pouvez choisir, pour chaque catégorie, si elle est dite, ignorée ou montrée dans une boîte de dialogue.</p>
+<p>La barre d'état a trois champs d'informations :</p>
+<ul>
+<li>Position de la ligne</li>
+<li>état de fonctionnement</li>
+<li>Position de la colonne</li>
+</ul>
+<h2>Connexion</h2>
+<p>Une connexion définit où s'exécute ce que vous lancez : sur cet ordinateur, ou sur un serveur.</p>
+<ul>
+<li>« Locale » est le choix par défaut : les programmes tournent sur cet ordinateur.</li>
+<li>Les autres choix sont des connexions à des serveurs.
+Quand une connexion est choisie, toutes les commandes sont envoyées à son serveur.
+Le dossier de travail, l'interpréteur et le mode ne seront donc plus disponibles.
+L'envoi d'une commande ouvre automatiquement une connexion.</li>
+</ul>
+<h3>SSH</h3>
+<p>MiTerm-N5 utilise par défaut le programme ssh.exe d'OpenSSH, livré avec Windows.
+L'authentification peut se faire de deux façons.</p>
+<ul>
+<li>Par mot de passe : une boîte de dialogue indique le serveur et demande le mot de passe, dans un champ masqué.</li>
+<li>Par clé : ssh trouve votre clé tout seul et ne pose aucune question.</li>
+</ul>
+<p>À la première connexion à un serveur, ssh en montre l'empreinte et demande si vous lui faites confiance.
+Annuler un dialogue n'est pas une erreur : la connexion s'arrête, simplement.
+MiTerm-N5 ne garde aucun mot de passe et ne copie aucune clé.</p>
+<p>Où sont les clés :</p>
+<ul>
+<li>La clé du serveur, celle que vous avez acceptée, est écrite par ssh dans le fichier <code>known_hosts</code> du dossier <code>.ssh</code> de votre profil Windows (<code>%USERPROFILE%\.ssh\known_hosts</code>).
+En mode portable, elle est dans le fichier <code>data\known_hosts</code>, à côté de l'application.</li>
+<li>Votre clé privée est un fichier du même dossier <code>.ssh</code>, par exemple <code>id_ed25519</code>, à côté de sa clé publique <code>id_ed25519.pub</code>, celle que l'on copie sur le serveur.
+Ne partagez jamais la clé privée.
+Le profil <code>ssh-keygen</code> peut aider à la créer.</li>
+</ul>
+<h2>Limites d'utilisation</h2>
+<ul>
+<li>
+<p>MiTerm-N5 fonctionne seulement sous Windows.</p>
+</li>
+<li>
+<p>Il ne lance pas les programmes graphiques, qui ouvrent leur propre fenêtre.</p>
+</li>
+<li>
+<p>Il ne prend pas en charge les programmes plein écran comme <code>vim</code> ou <code>htop</code>.
+Ils se lancent, mais leur écran n'est pas lu comme une grille.
+Le clavier ne leur est pas transmis directement.</p>
+</li>
+<li>
+<p>La sortie a une limite de lignes, définissable dans les Préférences.
+Les plus anciennes lignes sont abandonnées, et MiTerm-N5 vous le dit.</p>
+</li>
+<li>
+<p>L'export peut contenir des secrets : relisez-le avant de le partager.</p>
+</li>
+<li>
+<p>Une ligne plus longue que l'écran est lue comme plusieurs lignes, comme dans un terminal ordinaire.
+MiTerm-N5 agrandit alors la taille du terminal si vous avez choisi la taille automatique.</p>
+</li>
+<li>
+<p>La reconnaissance des activités lit le texte, pas les couleurs.
+Elle peut se tromper ou ne rien voir.
+Un mot de passe que l'on tape n'écrit rien : la question reste reconnue après la réponse.</p>
+</li>
+<li>
+<p>Un programme lancé garde les droits de l'utilisateur.
+MiTerm-N5 ne protège pas contre une commande dangereuse.</p>
+</li>
+</ul>
+<h2>Fichier de lancement (.n5term)</h2>
+<p>Un fichier portant l'extension <code>.n5term</code> ouvre une session déjà réglée.
+Il suffit de le passer à l'application, ou de double-cliquer dessus, après une association.
+Le bouton d'association des Préférences, page Général, fait ouvrir ces fichiers par MiTerm-N5.</p>
+<p>C'est un fichier texte, une clé et sa valeur par ligne.
+Les lignes qui commencent par <code>;</code> ou <code>#</code> sont des commentaires.</p>
+<p>La clé obligatoire :</p>
+<ul>
+<li><code>profile</code> : le nom du profil à choisir.</li>
+</ul>
+<p>Les autres clés possibles sont :</p>
+<ul>
+<li><code>WorkingPath</code> : le dossier de travail ;</li>
+<li>le nom d'une variable du profil (<code>name</code>, <code>source</code>, <code>comment</code>, <code>message</code>…) : sa valeur.</li>
+</ul>
+<p>Exemple :</p>
+<pre><code>profile = git
+WorkingPath = C:\Projets\mon-projet
+source = origin
+</code></pre>
+<p>Sans définir de valeur pour <code>WorkingPath</code>, la session démarre dans le dossier du fichier.
+Un chemin relatif se lit à partir de ce dossier.</p>
+<p>Le fichier ne lance aucune commande.</p>
+<h2>Mode local et mode portable</h2>
+<p>En mode local, MiTerm-N5 range ses données dans votre profil Windows.
+Les réglages et les profils sont dans <code>%APPDATA%\MiTerm-N5</code>.
+Le journal est dans <code>%LOCALAPPDATA%\MiTerm-N5\Logs</code>.</p>
+<p>Le mode portable convient à une clé USB.
+Il ne laisse aucune trace sur l'ordinateur hôte.
+Réglages, profils et journal sont dans un dossier <code>data</code>, à côté de l'exécutable.</p>
+<p>Pour passer en mode portable, placez un fichier vide nommé <code>portable</code> à côté de l'exécutable.
+On peut aussi spécifier un dossier de données avec l'option <code>--data-folder</code>.</p>
+</body>
+</html>

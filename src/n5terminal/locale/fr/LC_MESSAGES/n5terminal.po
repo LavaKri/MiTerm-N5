@@ -1,0 +1,2380 @@
+# French translations for MiTerm-N5.
+# This file is distributed under the same license as the MiTerm-N5 project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  MiTerm-N5\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-04 16:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: src/n5terminal/__main__.py
+#, python-brace-format
+msgid ""
+"The startup profile could not be applied.\n"
+"{details}"
+msgstr ""
+"Le profil de démarrage n'a pas pu être appliqué.\n"
+"{details}"
+
+#: src/n5terminal/__main__.py
+#, python-brace-format
+msgid ""
+"The launch file could not be applied completely.\n"
+"{details}"
+msgstr ""
+"Le fichier de lancement n'a pas pu être appliqué complètement.\n"
+"{details}"
+
+#: src/n5terminal/__main__.py
+#, python-brace-format
+msgid ""
+"A connection file could not be read or used.\n"
+"{details}"
+msgstr ""
+"Un fichier de connexion n'a pas pu être lu ou utilisé.\n"
+"{details}"
+
+#: src/n5terminal/__main__.py
+#, python-brace-format
+msgid ""
+"A profile file could not be read.\n"
+"{details}"
+msgstr ""
+"Un fichier de profil n'a pas pu être lu.\n"
+"{details}"
+
+#: src/n5terminal/__main__.py
+#, python-brace-format
+msgid ""
+"A configuration file could not be read.\n"
+"{details}"
+msgstr ""
+"Un fichier de configuration n'a pas pu être lu.\n"
+"{details}"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "No announcement"
+msgstr "Aucune annonce"
+
+#: src/n5terminal/core/config/announcements.py
+#: src/n5terminal/presenters/catalogs_editor.py
+#: src/n5terminal/presenters/profile_editor.py
+msgid "Message"
+msgstr "Message"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Read the line"
+msgstr "Lire la ligne"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Dialog box"
+msgstr "Boîte de dialogue"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Messages or beep"
+msgstr "Messages ou bip"
+
+#: src/n5terminal/core/config/announcements.py
+#: src/n5terminal/ui/catalogs_dialog.py
+msgid "Messages"
+msgstr "Messages"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "State of the program"
+msgstr "État du programme"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Session, settings"
+msgstr "Session, réglages"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Session, change"
+msgstr "Session, changement"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Output, movement and reading"
+msgstr "Sortie, déplacement et lecture"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Output, no more elements"
+msgstr "Sortie, pas ou plus d'éléments"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Output, read the line"
+msgstr "Sortie, lire la ligne"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Search reached"
+msgstr "Recherche atteinte"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Unsuccessful search"
+msgstr "Recherche sans résultat"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Output, keys sent"
+msgstr "Sortie, touches envoyées"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Terminal activity"
+msgstr "Activité du terminal"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Connection, state"
+msgstr "Connexion, état"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Command not possible"
+msgstr "Commande impossible"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Launch failure"
+msgstr "Échec de lancement"
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Started: {program}."
+msgstr "Lancé : {program}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "{program} ended with the code {code}."
+msgstr "{program} s'est terminé avec le code {code}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "{program} ended."
+msgstr "{program} s'est terminé."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Program stopped."
+msgstr "Programme arrêté."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "A process started by the program is still running."
+msgstr "Un processus lancé par le programme tourne encore."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Working folder: {folder}."
+msgstr "Dossier de travail : {folder}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Terminal size: {columns} columns, {rows} rows."
+msgstr "Taille du terminal : {columns} colonnes, {rows} lignes."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "{title}, title {level}"
+msgstr "{title}, titre {level}"
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Terminal cursor: {line}"
+msgstr "Curseur du terminal : {line}"
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Start of the emulator: {line}"
+msgstr "Début de l'émulateur : {line}"
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "End of the emulator: {line}"
+msgstr "Fin de l'émulateur : {line}"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "No next title."
+msgstr "Pas de titre suivant."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "No previous title."
+msgstr "Pas de titre précédent."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "No next title {level}."
+msgstr "Pas de titre {level} suivant."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "No previous title {level}."
+msgstr "Pas de titre {level} précédent."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "{line}"
+msgstr "{line}"
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "No next occurrence of \"{term}\"."
+msgstr "Pas d'occurrence suivante de « {term} »."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "No previous occurrence of \"{term}\"."
+msgstr "Pas d'occurrence précédente de « {term} »."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Sends {key}."
+msgstr "Envoie {key}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "{text}"
+msgstr "{text}"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "No element recognized."
+msgstr "Aucun élément reconnu."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "The help file {file} was not found."
+msgstr "Le fichier d'aide {file} est introuvable."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "The help could not be opened in the browser."
+msgstr "L'aide n'a pas pu être ouverte dans le navigateur."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Activity signaled."
+msgstr "Activité signalée."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Activity not signaled."
+msgstr "Activité non signalée."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Program not found: {program}."
+msgstr "Programme introuvable : {program}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Select a valid PowerShell. Not found: {path}."
+msgstr "Veuillez sélectionner un PowerShell valide. Introuvable : {path}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "PowerShell: {powershell}."
+msgstr "PowerShell : {powershell}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "OpenSSH client: {ssh}."
+msgstr "Client OpenSSH : {ssh}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "{program} could not be started."
+msgstr "{program} n'a pas pu être lancé."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Nothing sent: the program does not read its input."
+msgstr "Rien n'a été envoyé : le programme ne lit pas son entrée."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Folder not found: {folder}."
+msgstr "Dossier introuvable : {folder}."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Connecting…"
+msgstr "Connexion…"
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Authenticating…"
+msgstr "Authentification…"
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Connected to {name}."
+msgstr "Connecté à {name}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Disconnected (code {code})."
+msgstr "Déconnecté (code {code})."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Disconnected."
+msgstr "Déconnecté."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Connection cancelled."
+msgstr "Connexion annulée."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Connection failed: {detail}"
+msgstr "Échec de la connexion : {detail}"
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Authentication refused: {detail}"
+msgstr "Authentification refusée : {detail}"
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "Host key refused: {detail}"
+msgstr "Clé d'hôte refusée : {detail}"
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "OpenSSH client not found: {program}."
+msgstr "Client OpenSSH introuvable : {program}."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "The program that asks for passwords was not found: {program}."
+msgstr "Le programme qui demande les mots de passe est introuvable : {program}."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Not available while a program is running."
+msgstr "Indisponible pendant qu'un programme tourne."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Not available while a connection is open."
+msgstr "Indisponible tant qu'une connexion est ouverte."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Not available with a connection."
+msgstr "Indisponible avec une connexion."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "No connection is chosen."
+msgstr "Aucune connexion n'est choisie."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "No connection is open."
+msgstr "Aucune connexion n'est ouverte."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "No program is running."
+msgstr "Aucun programme n'est en cours."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "The output is empty."
+msgstr "La sortie est vide."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "There is no command to resend."
+msgstr "Il n'y a aucune commande à renvoyer."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "No command typed yet."
+msgstr "Aucune commande n'a encore été tapée."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Only for programs that use a terminal."
+msgstr "Seulement pour les programmes qui utilisent un terminal."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "A shell always uses the TUI mode."
+msgstr "Un shell utilise toujours le mode TUI."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Not available while a profile is chosen."
+msgstr "Indisponible tant qu'un profil est choisi."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "No profile is chosen."
+msgstr "Aucun profil n'est choisi."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "The chosen profile uses no variable."
+msgstr "Le profil choisi n'utilise aucune variable."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "The chosen profile has no program."
+msgstr "Le profil choisi n'a pas de programme."
+
+#: src/n5terminal/core/config/announcements.py
+msgid ""
+"Nothing sent: the program has ended and only a process it started is "
+"still running."
+msgstr ""
+"Rien n'a été envoyé : le programme est terminé et seul un processus qu'il"
+" a lancé tourne encore."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Copied to the clipboard."
+msgstr "Copié dans le presse-papiers."
+
+#: src/n5terminal/core/config/announcements.py
+msgid "Nothing copied: the clipboard is not available."
+msgstr "Rien n'a été copié : le presse-papiers n'est pas disponible."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid "The output keeps only the last {limit} lines: the oldest are dropped."
+msgstr ""
+"La sortie ne garde que les {limit} dernières lignes : les plus anciennes "
+"sont abandonnées."
+
+#: src/n5terminal/core/config/announcements.py
+#, python-brace-format
+msgid ""
+"{count} lines of output were lost: they arrived faster than the window "
+"could show."
+msgstr ""
+"{count} lignes de sortie ont été perdues : elles sont arrivées plus vite "
+"que la fenêtre ne pouvait les montrer."
+
+#: src/n5terminal/core/config/keys.py
+msgid "Navigation"
+msgstr "Navigation"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Editing"
+msgstr "Édition"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Control"
+msgstr "Contrôle"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Function keys"
+msgstr "Touches de fonction"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Up arrow"
+msgstr "Flèche haut"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Down arrow"
+msgstr "Flèche bas"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Right arrow"
+msgstr "Flèche droite"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Left arrow"
+msgstr "Flèche gauche"
+
+#: src/n5terminal/core/config/keys.py src/n5terminal/core/config/shortcuts.py
+msgid "Home"
+msgstr "Début"
+
+#: src/n5terminal/core/config/keys.py src/n5terminal/core/config/shortcuts.py
+msgid "End"
+msgstr "Fin"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Page up"
+msgstr "Page précédente"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Page down"
+msgstr "Page suivante"
+
+#: src/n5terminal/core/config/keys.py src/n5terminal/core/config/shortcuts.py
+msgid "Enter"
+msgstr "Entrée"
+
+#: src/n5terminal/core/config/keys.py src/n5terminal/core/config/shortcuts.py
+msgid "Tab"
+msgstr "Tab"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Shift+Tab"
+msgstr "Maj+Tab"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Escape"
+msgstr "Échap"
+
+#: src/n5terminal/core/config/keys.py src/n5terminal/core/config/shortcuts.py
+msgid "Space"
+msgstr "Espace"
+
+#: src/n5terminal/core/config/keys.py src/n5terminal/core/config/shortcuts.py
+msgid "Backspace"
+msgstr "Retour arrière"
+
+#: src/n5terminal/core/config/keys.py src/n5terminal/core/config/shortcuts.py
+msgid "Delete"
+msgstr "Suppression"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Ctrl+C (interrupt)"
+msgstr "Ctrl+C (interrompre)"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Ctrl+D (end of input)"
+msgstr "Ctrl+D (fin de saisie)"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Ctrl+Z (suspend)"
+msgstr "Ctrl+Z (suspendre)"
+
+#: src/n5terminal/core/config/keys.py
+msgid "Ctrl+L (redraw)"
+msgstr "Ctrl+L (redessiner)"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F1"
+msgstr "F1"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F2"
+msgstr "F2"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F3"
+msgstr "F3"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F4"
+msgstr "F4"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F5"
+msgstr "F5"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F6"
+msgstr "F6"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F7"
+msgstr "F7"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F8"
+msgstr "F8"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F9"
+msgstr "F9"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F10"
+msgstr "F10"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F11"
+msgstr "F11"
+
+#: src/n5terminal/core/config/keys.py
+msgid "F12"
+msgstr "F12"
+
+#: src/n5terminal/core/config/launch_file.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Impossible de lire {file} : {error}"
+
+#: src/n5terminal/core/config/launch_file.py
+#, python-brace-format
+msgid "{file}: the variables are ignored because the file has no profile."
+msgstr ""
+"{file} : les variables sont ignorées parce que le fichier n'a pas de "
+"profil."
+
+#: src/n5terminal/core/config/launch_file.py
+#, python-brace-format
+msgid "{file}: the working folder {folder} does not exist."
+msgstr "{file} : le dossier de travail {folder} n'existe pas."
+
+#: src/n5terminal/core/config/screen_reader.py
+msgid "No output"
+msgstr "Aucune sortie"
+
+#: src/n5terminal/core/config/screen_reader.py
+msgid "UI Automation (Windows)"
+msgstr "UI Automation (Windows)"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Main"
+msgstr "Principal"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Key sending"
+msgstr "Envoi de touche"
+
+#: src/n5terminal/core/config/shortcuts.py
+#, python-brace-format
+msgid "Send {key}"
+msgstr "Envoyer {key}"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "New session"
+msgstr "Nouvelle session"
+
+#: src/n5terminal/core/config/shortcuts.py
+#: src/n5terminal/presenters/session_info.py src/n5terminal/ui/feedback.py
+msgid "Working folder"
+msgstr "Dossier de travail"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Export the output"
+msgstr "Exporter la sortie"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Stop the program"
+msgstr "Arrêter le programme"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Resend the last command"
+msgstr "Renvoyer la dernière commande"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Clear the output"
+msgstr "Effacer la sortie"
+
+#: src/n5terminal/core/config/shortcuts.py src/n5terminal/ui/actions.py
+msgid "Command history"
+msgstr "Historique des commandes"
+
+#: src/n5terminal/core/config/shortcuts.py src/n5terminal/ui/output_commands.py
+msgid "Find in the output"
+msgstr "Rechercher dans la sortie"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Find next"
+msgstr "Rechercher le suivant"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Find previous"
+msgstr "Rechercher le précédent"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Go to the cursor of the terminal"
+msgstr "Aller au curseur du terminal"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Go to the first line of the terminal"
+msgstr "Aller à la première ligne du terminal"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Go to the last line of the terminal"
+msgstr "Aller à la dernière ligne du terminal"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Read the line with formatting"
+msgstr "Lire la ligne avec mise en forme"
+
+#: src/n5terminal/core/config/shortcuts.py src/n5terminal/ui/output_commands.py
+msgid "Identify activities"
+msgstr "Identifier des activités"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Signal activities"
+msgstr "Signaler les activités"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Open the help"
+msgstr "Ouvrir l'aide"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Launch the program of the profile"
+msgstr "Lancer le programme du profil"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Connect"
+msgstr "Se connecter"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Alt"
+msgstr "Alt"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Shift"
+msgstr "Maj"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Esc"
+msgstr "Échap"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "PageUp"
+msgstr "Page précédente"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "PageDown"
+msgstr "Page suivante"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Up"
+msgstr "Haut"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Down"
+msgstr "Bas"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Left"
+msgstr "Gauche"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Right"
+msgstr "Droite"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Insert"
+msgstr "Inser"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Pause"
+msgstr "Pause"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "{label}, {value}"
+msgstr "{label}, {value}"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "{percent} %"
+msgstr "{percent} %"
+
+#: src/n5terminal/core/screen/line_analysis.py
+msgid "Progress"
+msgstr "Progression"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "{done} of {total} {unit}"
+msgstr "{done} sur {total} {unit}"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "{done} of {total}"
+msgstr "{done} sur {total}"
+
+#: src/n5terminal/core/screen/line_analysis.py
+msgid "yes"
+msgstr "oui"
+
+#: src/n5terminal/core/screen/line_analysis.py
+msgid "no"
+msgstr "non"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "Question: {question} Default answer: {answer}"
+msgstr "Question : {question} Réponse par défaut : {answer}"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "Question: {question}"
+msgstr "Question : {question}"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "Warning: {message}"
+msgstr "Avertissement : {message}"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "Error: {message}"
+msgstr "Erreur : {message}"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "{item}, selected"
+msgstr "{item}, sélectionné"
+
+#: src/n5terminal/core/screen/line_analysis.py
+msgid "not checked"
+msgstr "non cochée"
+
+#: src/n5terminal/core/screen/line_analysis.py
+msgid "checked"
+msgstr "cochée"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "{item}, {state}"
+msgstr "{item}, {state}"
+
+#: src/n5terminal/core/screen/line_analysis.py
+#, python-brace-format
+msgid "Option {number}, {item}"
+msgstr "Option {number}, {item}"
+
+#: src/n5terminal/core/screen/screen_elements.py
+#, python-brace-format
+msgid "{text}, line {number}"
+msgstr "{text}, ligne {number}"
+
+#: src/n5terminal/core/screen/screen_elements.py
+#, python-brace-format
+msgid "Progress, {text}"
+msgstr "Progression, {text}"
+
+#: src/n5terminal/core/screen/screen_elements.py
+#, python-brace-format
+msgid "Choice, {text}"
+msgstr "Choix, {text}"
+
+#: src/n5terminal/core/screen/screen_elements.py
+#, python-brace-format
+msgid "Choice, {count} options, selected: {item}"
+msgstr "Choix, {count} options, sélectionné : {item}"
+
+#: src/n5terminal/core/screen/screen_elements.py
+#, python-brace-format
+msgid "Choice, {count} options"
+msgstr "Choix, {count} options"
+
+#: src/n5terminal/presenters/announcements_preferences.py
+#, python-brace-format
+msgid "{category}, {destination}"
+msgstr "{category}, {destination}"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+msgid "French"
+msgstr "français"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+msgid "English"
+msgstr "anglais"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+#, python-brace-format
+msgid "{text}... Message excerpt"
+msgstr "{text}... Extrait de message"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+msgid "All"
+msgstr "Tous"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+msgid "Not translated"
+msgstr "Non traduits"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+msgid "Menus"
+msgstr "Menus"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+#: src/n5terminal/ui/preferences_dialog.py src/n5terminal/ui/shortcuts_page.py
+msgid "Preferences"
+msgstr "Préférences"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+#: src/n5terminal/ui/preferences_dialog.py
+msgid "Announcements"
+msgstr "Annonces"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+msgid "Dialogs"
+msgstr "Dialogues"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+msgid "Other"
+msgstr "Autres"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+msgid "(not translated)"
+msgstr "(non traduit)"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+#, python-brace-format
+msgid "Message in {language}"
+msgstr "Message en {language}"
+
+#: src/n5terminal/presenters/catalogs_editor.py
+#, python-brace-format
+msgid "The fields of the message must be the same as in its id: {fields}."
+msgstr ""
+"Les champs du message doivent être les mêmes que dans son identifiant : "
+"{fields}."
+
+#: src/n5terminal/presenters/catalogs_editor.py
+#: src/n5terminal/presenters/session_info.py
+#: src/n5terminal/presenters/shortcuts_preferences.py
+msgid "none"
+msgstr "aucun"
+
+#: src/n5terminal/presenters/choices.py src/n5terminal/ui/main_menu.py
+msgid "CLI, plain text"
+msgstr "CLI, texte simple"
+
+#: src/n5terminal/presenters/choices.py src/n5terminal/ui/main_menu.py
+msgid "TUI, interactive terminal"
+msgstr "TUI, terminal interactif"
+
+#: src/n5terminal/presenters/choices.py
+#: src/n5terminal/presenters/session_info.py src/n5terminal/ui/main_menu.py
+msgid "None"
+msgstr "Aucun"
+
+#: src/n5terminal/presenters/choices.py src/n5terminal/ui/main_menu.py
+#, python-brace-format
+msgid "{columns} x {rows}"
+msgstr "{columns} x {rows}"
+
+#: src/n5terminal/presenters/choices.py src/n5terminal/ui/main_menu.py
+msgid "Automatic"
+msgstr "Automatique"
+
+#: src/n5terminal/presenters/connection_editor.py
+#: src/n5terminal/presenters/profile_editor.py
+msgid "The name cannot be empty."
+msgstr "Le nom ne peut pas être vide."
+
+#: src/n5terminal/presenters/connection_editor.py
+#: src/n5terminal/presenters/profile_editor.py
+#, python-brace-format
+msgid "The name cannot be longer than {limit} characters."
+msgstr "Le nom ne peut pas dépasser {limit} caractères."
+
+#: src/n5terminal/presenters/connection_editor.py
+#: src/n5terminal/presenters/profile_editor.py
+msgid ""
+"The name cannot hold any of these characters: < > : \" / \\ | ? *, nor "
+"end with a dot or a space, nor be a name reserved by Windows."
+msgstr ""
+"Le nom ne peut contenir aucun de ces caractères : < > : \" / \\ | ? *, ni"
+" finir par un point ou un espace, ni être un nom réservé par Windows."
+
+#: src/n5terminal/presenters/connection_editor.py
+msgid "Another connection already has this name."
+msgstr "Une autre connexion a déjà ce nom."
+
+#: src/n5terminal/presenters/connection_editor.py
+msgid "The target cannot be empty."
+msgstr "La cible ne peut pas être vide."
+
+#: src/n5terminal/presenters/connection_editor.py
+msgid "The target cannot start with a dash, nor can the server after the @."
+msgstr "La cible ne peut pas commencer par un tiret, ni le serveur après le @."
+
+#: src/n5terminal/presenters/connection_editor.py
+msgid "The target cannot hold a space or a control character."
+msgstr "La cible ne peut contenir ni espace ni caractère de contrôle."
+
+#: src/n5terminal/presenters/connection_editor.py
+#, python-brace-format
+msgid "The port is a whole number from {first} to {last}, or nothing."
+msgstr "Le port est un nombre entier de {first} à {last}, ou rien."
+
+#: src/n5terminal/presenters/connection_part.py
+msgid "not connected"
+msgstr "non connecté"
+
+#: src/n5terminal/presenters/connection_session.py
+#, python-brace-format
+msgid "Connected to {name}"
+msgstr "Connecté à {name}"
+
+#: src/n5terminal/presenters/connection_session.py
+#, python-brace-format
+msgid "Disconnected (code {code})"
+msgstr "Déconnecté (code {code})"
+
+#: src/n5terminal/presenters/connection_session.py
+msgid "Disconnected"
+msgstr "Déconnecté"
+
+#: src/n5terminal/presenters/connection_session.py
+msgid "Connection cancelled"
+msgstr "Connexion annulée"
+
+#: src/n5terminal/presenters/connection_session.py
+msgid "Connection failed"
+msgstr "Connexion échouée"
+
+#: src/n5terminal/presenters/general_preferences.py
+#: src/n5terminal/ui/main_menu.py
+msgid "Free"
+msgstr "Libre"
+
+#: src/n5terminal/presenters/general_preferences.py
+#, python-brace-format
+msgid "Associate the {extension} files with MiTerm-N5"
+msgstr "Associer les fichiers {extension} à MiTerm-N5"
+
+#: src/n5terminal/presenters/general_preferences.py
+#, python-brace-format
+msgid "Remove the association of the {extension} files"
+msgstr "Supprimer l'association des fichiers {extension}"
+
+#: src/n5terminal/presenters/general_preferences.py
+#, python-brace-format
+msgid "The {extension} files now open with MiTerm-N5."
+msgstr "Les fichiers {extension} s'ouvrent maintenant avec MiTerm-N5."
+
+#: src/n5terminal/presenters/general_preferences.py
+#, python-brace-format
+msgid "The {extension} files no longer open with MiTerm-N5."
+msgstr "Les fichiers {extension} ne s'ouvrent plus avec MiTerm-N5."
+
+#: src/n5terminal/presenters/general_preferences.py
+msgid "Not available in portable mode: it would leave a trace on this computer."
+msgstr ""
+"Indisponible en mode portable : cela laisserait une trace sur cet "
+"ordinateur."
+
+#: src/n5terminal/presenters/line_reader.py
+#: src/n5terminal/ui/output_commands.py
+msgid "blank"
+msgstr "vide"
+
+#: src/n5terminal/presenters/powershell_choice.py
+msgid "Windows PowerShell"
+msgstr "Windows PowerShell"
+
+#: src/n5terminal/presenters/powershell_choice.py
+#, python-brace-format
+msgid "PowerShell {version} ({path})"
+msgstr "PowerShell {version} ({path})"
+
+#: src/n5terminal/presenters/powershell_choice.py
+#, python-brace-format
+msgid "PowerShell ({path})"
+msgstr "PowerShell ({path})"
+
+#: src/n5terminal/presenters/powershell_choice.py
+#: src/n5terminal/presenters/ssh_choice.py
+msgid "Other…"
+msgstr "Autre…"
+
+#: src/n5terminal/presenters/powershell_choice.py
+msgid "Select a valid PowerShell."
+msgstr "Veuillez sélectionner un PowerShell valide."
+
+#: src/n5terminal/presenters/profile_editor.py
+#: src/n5terminal/ui/connection_dialog.py src/n5terminal/ui/profile_dialog.py
+msgid "Name"
+msgstr "Nom"
+
+#: src/n5terminal/presenters/profile_editor.py
+msgid "Source"
+msgstr "Source"
+
+#: src/n5terminal/presenters/profile_editor.py
+#: src/n5terminal/ui/announcements_page.py
+msgid "Destination"
+msgstr "Destination"
+
+#: src/n5terminal/presenters/profile_editor.py
+msgid "Value 1"
+msgstr "Valeur 1"
+
+#: src/n5terminal/presenters/profile_editor.py
+msgid "Value 2"
+msgstr "Valeur 2"
+
+#: src/n5terminal/presenters/profile_editor.py
+msgid "Comment"
+msgstr "Commentaire"
+
+#: src/n5terminal/presenters/profile_editor.py
+msgid "IP address"
+msgstr "Adresse IP"
+
+#: src/n5terminal/presenters/profile_editor.py
+msgid "Launch command"
+msgstr "Commande de lancement"
+
+#: src/n5terminal/presenters/profile_editor.py
+msgid "Program command"
+msgstr "Commande du programme"
+
+#: src/n5terminal/presenters/profile_editor.py
+msgid "Shell"
+msgstr "Shell"
+
+#: src/n5terminal/presenters/profile_editor.py
+#, python-brace-format
+msgid "{label}, {variable}"
+msgstr "{label}, {variable}"
+
+#: src/n5terminal/presenters/profile_editor.py
+msgid "Another profile already has this name."
+msgstr "Un autre profil porte déjà ce nom."
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "{name}: {value}"
+msgstr "{name} : {value}"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "free profile"
+msgstr "profil libre"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "MiTerm-N5: {profile} in {folder}"
+msgstr "MiTerm-N5 : {profile} dans {folder}"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "MiTerm-N5: {profile} on SSH {name}"
+msgstr "MiTerm-N5 : {profile} sur SSH {name}"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "MiTerm-N5: {profile} on SSH {name} (not connected)"
+msgstr "MiTerm-N5 : {profile} sur SSH {name} (non connecté)"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "SSH {name}"
+msgstr "SSH {name}"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "To {target}"
+msgstr "Vers {target}"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "Connection to {name}"
+msgstr "Connexion à {name}"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "Connection {name}: password"
+msgstr "Connexion {name} : mot de passe"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "{target}, port {port}"
+msgstr "{target}, port {port}"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "From {folder}"
+msgstr "Depuis {folder}"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Ready"
+msgstr "Prêt"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "Running: {program}"
+msgstr "En cours : {program}"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Child process active"
+msgstr "Processus enfant actif"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Ended"
+msgstr "Terminé"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "Ended (code {code})"
+msgstr "Terminé (code {code})"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "{seconds} s"
+msgstr "{seconds} s"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "{minutes} min"
+msgstr "{minutes} min"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "{hours} h {minutes} min"
+msgstr "{hours} h {minutes} min"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "since {duration}"
+msgstr "depuis {duration}"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Connection"
+msgstr "Connexion"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Target"
+msgstr "Cible"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Connection state"
+msgstr "État de la connexion"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Session type"
+msgstr "Type de session"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Profile"
+msgstr "Profil"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Running program"
+msgstr "Programme en cours"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Last end"
+msgstr "Fin du dernier programme"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Launch mode"
+msgstr "Mode de lancement"
+
+#: src/n5terminal/presenters/session_info.py
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Interpreter"
+msgstr "Interpréteur"
+
+#: src/n5terminal/presenters/session_info.py
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Terminal size"
+msgstr "Taille du terminal"
+
+#: src/n5terminal/presenters/session_info.py
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Terminal view only"
+msgstr "Vue terminal seule"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Yes"
+msgstr "Oui"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "No"
+msgstr "Non"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Output lines"
+msgstr "Lignes de la sortie"
+
+#: src/n5terminal/presenters/session_info.py
+#, python-brace-format
+msgid "{lines} of {limit}"
+msgstr "{lines} sur {limit}"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Settings file"
+msgstr "Fichier des réglages"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Profiles folder"
+msgstr "Dossier des profils"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Connections folder"
+msgstr "Dossier des connexions"
+
+#: src/n5terminal/presenters/session_info.py src/n5terminal/ui/ssh_dialog.py
+msgid "OpenSSH client"
+msgstr "Client OpenSSH"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Log file"
+msgstr "Fichier du journal"
+
+#: src/n5terminal/presenters/session_info.py
+msgid "Version"
+msgstr "Version"
+
+#: src/n5terminal/presenters/session_presenter.py
+msgid "(hidden message)"
+msgstr "(message masqué)"
+
+#: src/n5terminal/presenters/session_report.py
+msgid "normal"
+msgstr "normal"
+
+#: src/n5terminal/presenters/session_report.py
+msgid "develop"
+msgstr "develop"
+
+#: src/n5terminal/presenters/session_report.py
+msgid "portable"
+msgstr "portable"
+
+#: src/n5terminal/presenters/shortcuts_preferences.py
+#, python-brace-format
+msgid "{command}, {shortcut}"
+msgstr "{command}, {shortcut}"
+
+#: src/n5terminal/presenters/shortcuts_preferences.py
+#, python-brace-format
+msgid "{shortcut} is already used by the command \"{command}\"."
+msgstr "{shortcut} est déjà utilisé par la commande « {command} »."
+
+#: src/n5terminal/presenters/shortcuts_preferences.py
+#, python-brace-format
+msgid "{shortcut} is the shortcut of a standard command and cannot be reused."
+msgstr ""
+"{shortcut} est le raccourci d'une commande standard et ne peut pas être "
+"réutilisé."
+
+#: src/n5terminal/presenters/shortcuts_preferences.py
+#, python-brace-format
+msgid ""
+"{shortcut} cannot be used: a shortcut needs the Ctrl key, the Alt key or "
+"both (or be a function key), Enter needs at least one modifier key, and "
+"Tab, Insert and Esc (except Shift+Esc) are reserved for navigation and "
+"screen readers."
+msgstr ""
+"{shortcut} ne peut pas être utilisé : un raccourci demande la touche "
+"Ctrl, la touche Alt ou les deux (ou être une touche de fonction), Entrée "
+"demande au moins une touche de modification, et Tab, Inser et Échap (sauf"
+" Maj+Échap) sont réservés à la navigation et aux lecteurs d'écran."
+
+#: src/n5terminal/presenters/shortcuts_preferences.py
+#, python-brace-format
+msgid "{shortcut} is not a valid shortcut."
+msgstr "{shortcut} n'est pas un raccourci valide."
+
+#: src/n5terminal/presenters/ssh_choice.py
+#, python-brace-format
+msgid "OpenSSH of Windows (default, {path})"
+msgstr "OpenSSH de Windows (par défaut, {path})"
+
+#: src/n5terminal/presenters/ssh_choice.py
+#, python-brace-format
+msgid "{path} (not tried)"
+msgstr "{path} (non essayé)"
+
+#: src/n5terminal/presenters/ssh_choice.py
+msgid "Select a valid ssh.exe."
+msgstr "Veuillez sélectionner un ssh.exe valide."
+
+#: src/n5terminal/presenters/ssh_choice.py
+msgid ""
+"Only the OpenSSH of Windows was tried with MiTerm-N5: the others may "
+"behave differently."
+msgstr ""
+"Seul l'OpenSSH de Windows a été essayé avec MiTerm-N5 : les autres "
+"peuvent se comporter autrement."
+
+#: src/n5terminal/ui/actions.py
+msgid "Session information"
+msgstr "Informations sur la session"
+
+#: src/n5terminal/ui/actions.py
+msgid "Commands"
+msgstr "Commandes"
+
+#: src/n5terminal/ui/actions.py
+#, python-brace-format
+msgid ""
+"A new session could not be started.\n"
+"{error}"
+msgstr ""
+"Une nouvelle session n'a pas pu être lancée.\n"
+"{error}"
+
+#: src/n5terminal/ui/actions.py
+msgid "There is no log yet."
+msgstr "Il n'y a pas encore de journal."
+
+#: src/n5terminal/ui/actions.py
+#, python-brace-format
+msgid ""
+"The log folder could not be opened.\n"
+"{error}"
+msgstr ""
+"Le dossier des journaux n'a pas pu être ouvert.\n"
+"{error}"
+
+#: src/n5terminal/ui/actions.py
+msgid "About"
+msgstr "À propos"
+
+#: src/n5terminal/ui/actions.py
+#, python-brace-format
+msgid ""
+"MiTerm-N5 {version}\n"
+"A terminal that a screen reader can read."
+msgstr ""
+"MiTerm-N5 {version}\n"
+"Un terminal qu'un lecteur d'écran peut lire."
+
+#: src/n5terminal/ui/announcements_page.py
+msgid "Announcement output"
+msgstr "Sortie des annonces"
+
+#: src/n5terminal/ui/announcements_page.py
+msgid "Categories of announcements"
+msgstr "Catégories d'annonces"
+
+#: src/n5terminal/ui/announcements_page.py
+msgid "Interval of the check of the activity (in seconds)"
+msgstr "Intervalle de vérification de l'activité (en secondes)"
+
+#: src/n5terminal/ui/announcements_page.py
+msgid "Activity announced only in the output area"
+msgstr "Annonce d'activité seulement dans la zone de sortie"
+
+#: src/n5terminal/ui/catalogs_dialog.py
+msgid "Catalogs"
+msgstr "Catalogues"
+
+#: src/n5terminal/ui/catalogs_dialog.py
+msgid "Category"
+msgstr "Catégorie"
+
+#: src/n5terminal/ui/catalogs_dialog.py src/n5terminal/ui/feedback.py
+#: src/n5terminal/ui/general_page.py
+msgid "Error"
+msgstr "Erreur"
+
+#: src/n5terminal/ui/command_panel.py src/n5terminal/ui/profile_dialog.py
+msgid "Command"
+msgstr "Commande"
+
+#: src/n5terminal/ui/command_panel.py
+msgid "Mask the message"
+msgstr "Masquer le message"
+
+#: src/n5terminal/ui/command_panel.py src/n5terminal/ui/send_menu.py
+msgid "Send"
+msgstr "Envoyer"
+
+#: src/n5terminal/ui/connection_actions.py
+#, python-brace-format
+msgid "The connection {name} no longer exists."
+msgstr "La connexion {name} n'existe plus."
+
+#: src/n5terminal/ui/connection_actions.py
+#, python-brace-format
+msgid "Delete the connection {name}?"
+msgstr "Supprimer la connexion {name} ?"
+
+#: src/n5terminal/ui/connection_actions.py
+msgid "Delete a connection"
+msgstr "Supprimer une connexion"
+
+#: src/n5terminal/ui/connection_actions.py
+#, python-brace-format
+msgid ""
+"The connection could not be deleted.\n"
+"{error}"
+msgstr ""
+"La connexion n'a pas pu être supprimée.\n"
+"{error}"
+
+#: src/n5terminal/ui/connection_actions.py
+#, python-brace-format
+msgid ""
+"The connection could not be saved.\n"
+"{error}"
+msgstr ""
+"La connexion n'a pas pu être enregistrée.\n"
+"{error}"
+
+#: src/n5terminal/ui/connection_dialog.py
+msgid "New connection"
+msgstr "Nouvelle connexion"
+
+#: src/n5terminal/ui/connection_dialog.py
+#, python-brace-format
+msgid "Edit the connection {name}"
+msgstr "Modifier la connexion {name}"
+
+#: src/n5terminal/ui/connection_dialog.py
+msgid "Target (an alias or user@host)"
+msgstr "Cible (un alias ou utilisateur@hôte)"
+
+#: src/n5terminal/ui/connection_dialog.py
+msgid "Port (optional)"
+msgstr "Port (facultatif)"
+
+#: src/n5terminal/ui/connection_dialog.py
+msgid "Value refused"
+msgstr "Valeur refusée"
+
+#: src/n5terminal/ui/connection_menu.py
+msgid "C&hoose connection"
+msgstr "&Choix connexion"
+
+#: src/n5terminal/ui/connection_menu.py
+msgid "&Connect"
+msgstr "Se c&onnecter"
+
+#: src/n5terminal/ui/connection_menu.py
+msgid "&Disconnect"
+msgstr "Se &déconnecter"
+
+#: src/n5terminal/ui/connection_menu.py src/n5terminal/ui/main_menu.py
+msgid "&Add…"
+msgstr "&Ajouter…"
+
+#: src/n5terminal/ui/connection_menu.py src/n5terminal/ui/main_menu.py
+msgid "&Edit…"
+msgstr "&Modifier…"
+
+#: src/n5terminal/ui/connection_menu.py
+msgid "De&lete"
+msgstr "&Supprimer"
+
+#: src/n5terminal/ui/connection_menu.py
+msgid "&SSH client…"
+msgstr "C&lient SSH…"
+
+#: src/n5terminal/ui/connection_menu.py
+msgid "Local"
+msgstr "Locale"
+
+#: src/n5terminal/ui/connection_prompts.py
+msgid "Host key"
+msgstr "Clé d'hôte"
+
+#: src/n5terminal/ui/connection_prompts.py
+msgid "Trust and continue"
+msgstr "Faire confiance et continuer"
+
+#: src/n5terminal/ui/connection_prompts.py
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/n5terminal/ui/connection_prompts.py
+msgid "Type the password or the answer the server asks for; it stays hidden."
+msgstr "Saisissez le mot de passe ou la réponse demandée par le serveur ; elle reste masquée."
+
+#: src/n5terminal/ui/connection_prompts.py
+msgid "Secret"
+msgstr "Secret"
+
+#: src/n5terminal/ui/develop_actions.py
+#, python-brace-format
+msgid ""
+"The catalogs could not be used.\n"
+"{error}"
+msgstr ""
+"Les catalogues n'ont pas pu être utilisés.\n"
+"{error}"
+
+#: src/n5terminal/ui/develop_actions.py
+msgid "The catalogs are saved. The changes show at the next start."
+msgstr ""
+"Les catalogues sont enregistrés. Les changements apparaîtront au prochain"
+" démarrage."
+
+#: src/n5terminal/ui/elements_dialog.py
+msgid "Copy to the clipboard"
+msgstr "Copier dans le presse-papiers"
+
+#: src/n5terminal/ui/feedback.py
+#, python-brace-format
+msgid "Line {number} of {total}"
+msgstr "Ligne {number} sur {total}"
+
+#: src/n5terminal/ui/feedback.py
+#, python-brace-format
+msgid "Column {number} of {total}"
+msgstr "Colonne {number} sur {total}"
+
+#: src/n5terminal/ui/feedback.py
+#, python-brace-format
+msgid ""
+"The screen reader output cannot be used.\n"
+"{error}"
+msgstr ""
+"La sortie vers le lecteur d'écran ne peut pas être utilisée.\n"
+"{error}"
+
+#: src/n5terminal/ui/feedback.py
+#, python-brace-format
+msgid ""
+"The settings could not be saved.\n"
+"{error}"
+msgstr ""
+"Les réglages n'ont pas pu être enregistrés.\n"
+"{error}"
+
+#: src/n5terminal/ui/feedback.py src/n5terminal/ui/general_page.py
+msgid "Information"
+msgstr "Information"
+
+#: src/n5terminal/ui/feedback.py
+msgid "Text files (*.txt)"
+msgstr "Fichiers texte (*.txt)"
+
+#: src/n5terminal/ui/feedback.py
+msgid "All files (*.*)"
+msgstr "Tous les fichiers (*.*)"
+
+#: src/n5terminal/ui/general_page.py
+msgid "Language"
+msgstr "Langue"
+
+#: src/n5terminal/ui/general_page.py
+msgid "Startup profile"
+msgstr "Profil de démarrage"
+
+#: src/n5terminal/ui/general_page.py
+msgid "Lines kept in the output"
+msgstr "Lignes conservées dans la sortie"
+
+#: src/n5terminal/ui/general_page.py
+msgid "Maximize the window at start"
+msgstr "Maximiser la fenêtre au démarrage"
+
+#: src/n5terminal/ui/general_page.py
+#, python-brace-format
+msgid ""
+"The association could not be changed.\n"
+"{error}"
+msgstr ""
+"L'association n'a pas pu être modifiée.\n"
+"{error}"
+
+#: src/n5terminal/ui/help_actions.py
+#, python-brace-format
+msgid ""
+"The help could not be converted.\n"
+"{error}"
+msgstr ""
+"L'aide n'a pas pu être convertie.\n"
+"{error}"
+
+#: src/n5terminal/ui/help_actions.py
+msgid "There is no Help folder."
+msgstr "Il n'y a pas de dossier Help."
+
+#: src/n5terminal/ui/help_actions.py
+#, python-brace-format
+msgid "Help converted: {count} pages."
+msgstr "Aide convertie : {count} pages."
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&File"
+msgstr "&Fichier"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Edit"
+msgstr "&Édition"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Session"
+msgstr "&Session"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Profile"
+msgstr "&Profil"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Connection"
+msgstr "&Connexion"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Terminal"
+msgstr "&Terminal"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Develop"
+msgstr "&Develop"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Help"
+msgstr "Ai&de"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&New session"
+msgstr "&Nouvelle session"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Working folder…"
+msgstr "&Dossier de travail…"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Recent folders"
+msgstr "Dossiers &récents"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Export the output…"
+msgstr "&Exporter la sortie…"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Preferences…"
+msgstr "&Préférences…"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Quit"
+msgstr "&Quitter"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "(none)"
+msgstr "(aucun)"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Stop the program"
+msgstr "&Arrêter le programme"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Resend the last command"
+msgstr "Renvoyer la &dernière commande"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "The program reads and writes text. Fits most commands."
+msgstr "Le programme lit et écrit du texte. Convient à la plupart des commandes."
+
+#: src/n5terminal/ui/main_menu.py
+msgid ""
+"The program believes it is in a real console. For python, ssh, passwords,"
+" shells."
+msgstr ""
+"Le programme croit être dans une vraie console. Pour python, ssh, les "
+"mots de passe et les shells."
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Mode"
+msgstr "&Mode"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "PowerShell &selection…"
+msgstr "&Sélection du PowerShell…"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Interpreter"
+msgstr "&Interpréteur"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Send a key"
+msgstr "Envoyer une touche"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Session in&formation…"
+msgstr "Informa&tions sur la session…"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Choose profile"
+msgstr "&Choix profil"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Launch the program"
+msgstr "&Lancer le programme"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Delete"
+msgstr "&Supprimer"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Define the &variables…"
+msgstr "Définir les &variables…"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Copy"
+msgstr "&Copier"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Select &all"
+msgstr "Tout &sélectionner"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Find in the output…"
+msgstr "&Rechercher dans la sortie…"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Find &next"
+msgstr "Rechercher le s&uivant"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Find &previous"
+msgstr "Rechercher le &précédent"
+
+#: src/n5terminal/ui/main_menu.py src/n5terminal/ui/send_menu.py
+msgid "&History"
+msgstr "&Historique"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Terminal size"
+msgstr "&Taille du terminal"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Terminal &view only"
+msgstr "&Vue terminal seule"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Move"
+msgstr "Dépla&cement"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Activities"
+msgstr "&Activités"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Clear the output"
+msgstr "&Effacer la sortie"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Go to the &cursor of the terminal"
+msgstr "Aller au &curseur du terminal"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Go to the &first line of the terminal"
+msgstr "Aller à la &première ligne du terminal"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Go to the &last line of the terminal"
+msgstr "Aller à la &dernière ligne du terminal"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Read the line with formatting"
+msgstr "&Lire la ligne avec mise en forme"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Identify activities…"
+msgstr "&Identifier des activités…"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Signal activities"
+msgstr "&Signaler les activités"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Catalogs…"
+msgstr "&Catalogues…"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Test programs"
+msgstr "&Programmes de test"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Convert the &help to HTML"
+msgstr "Convertir l'aide en &HTML"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&Open the help"
+msgstr "Ouvrir l'&aide"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Open the &logs folder"
+msgstr "Ouvrir le dossier des &journaux"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "&About"
+msgstr "À &propos"
+
+#: src/n5terminal/ui/main_window.py src/n5terminal/ui/output_area.py
+msgid "Output"
+msgstr "Sortie"
+
+#: src/n5terminal/ui/main_window.py
+msgid "Quit"
+msgstr "Quitter"
+
+#: src/n5terminal/ui/main_window.py
+msgid "A program is running. Stop it and quit?"
+msgstr "Un programme tourne. L'arrêter et quitter ?"
+
+#: src/n5terminal/ui/output_commands.py
+msgid "Elements recognized"
+msgstr "Éléments reconnus"
+
+#: src/n5terminal/ui/output_commands.py
+msgid ""
+"Export the output. The file may contain secrets typed or shown in the "
+"session."
+msgstr ""
+"Exporter la sortie. Le fichier peut contenir des secrets tapés ou "
+"affichés pendant la session."
+
+#: src/n5terminal/ui/output_commands.py
+msgid "output.txt"
+msgstr "sortie.txt"
+
+#: src/n5terminal/ui/output_commands.py
+#, python-brace-format
+msgid ""
+"The output could not be exported.\n"
+"{error}"
+msgstr ""
+"La sortie n'a pas pu être exportée.\n"
+"{error}"
+
+#: src/n5terminal/ui/output_commands.py
+msgid "Search for"
+msgstr "Mot à rechercher"
+
+#: src/n5terminal/ui/powershell_dialog.py
+msgid "PowerShell selection"
+msgstr "Sélection du PowerShell"
+
+#: src/n5terminal/ui/powershell_dialog.py
+msgid "PowerShell version"
+msgstr "Version de PowerShell"
+
+#: src/n5terminal/ui/powershell_dialog.py
+msgid "PowerShell path"
+msgstr "Chemin de PowerShell"
+
+#: src/n5terminal/ui/preferences_dialog.py
+msgid "General"
+msgstr "Général"
+
+#: src/n5terminal/ui/preferences_dialog.py
+msgid "Shortcuts"
+msgstr "Raccourcis"
+
+#: src/n5terminal/ui/profile_actions.py
+#, python-brace-format
+msgid "The profile {name} does not exist."
+msgstr "Le profil {name} n'existe pas."
+
+#: src/n5terminal/ui/profile_actions.py
+#, python-brace-format
+msgid "The startup profile {name} does not exist."
+msgstr "Le profil de démarrage {name} n'existe pas."
+
+#: src/n5terminal/ui/profile_actions.py
+#, python-brace-format
+msgid "The profile {name} no longer exists."
+msgstr "Le profil {name} n'existe plus."
+
+#: src/n5terminal/ui/profile_actions.py
+#, python-brace-format
+msgid "Delete the profile {profile}?"
+msgstr "Supprimer le profil {profile} ?"
+
+#: src/n5terminal/ui/profile_actions.py
+msgid "Delete a profile"
+msgstr "Supprimer un profil"
+
+#: src/n5terminal/ui/profile_actions.py
+#, python-brace-format
+msgid ""
+"The profile could not be deleted.\n"
+"{error}"
+msgstr ""
+"Le profil n'a pas pu être supprimé.\n"
+"{error}"
+
+#: src/n5terminal/ui/profile_actions.py
+#, python-brace-format
+msgid ""
+"The profile could not be saved.\n"
+"{error}"
+msgstr ""
+"Le profil n'a pas pu être enregistré.\n"
+"{error}"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "New profile"
+msgstr "Nouveau profil"
+
+#: src/n5terminal/ui/profile_dialog.py
+#, python-brace-format
+msgid "Edit the profile {name}"
+msgstr "Modifier le profil {name}"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Program"
+msgstr "Programme"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Prompt prefix"
+msgstr "Préfixe de l'invite"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Mode"
+msgstr "Mode"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "StdErr prefix"
+msgstr "Préfixe StdErr"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Variables"
+msgstr "Variables"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Command type"
+msgstr "Type de commande"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Common commands"
+msgstr "Commandes courantes"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Add a command…"
+msgstr "Ajouter une commande…"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Edit the command…"
+msgstr "Modifier la commande…"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Remove the command"
+msgstr "Supprimer la commande"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "This command is already in the list."
+msgstr "Cette commande est déjà dans la liste."
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Command refused"
+msgstr "Commande refusée"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Add a command"
+msgstr "Ajouter une commande"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Edit the command"
+msgstr "Modifier la commande"
+
+#: src/n5terminal/ui/profile_dialog.py
+msgid "Name refused"
+msgstr "Nom refusé"
+
+#: src/n5terminal/ui/program_dialog.py
+msgid "Browse…"
+msgstr "Parcourir…"
+
+#: src/n5terminal/ui/program_dialog.py
+msgid "Programs (*.exe)"
+msgstr "Programmes (*.exe)"
+
+#: src/n5terminal/ui/program_dialog.py
+msgid "Choice refused"
+msgstr "Choix refusé"
+
+#: src/n5terminal/ui/send_menu.py
+msgid "Previous title (1 to 6)"
+msgstr "Titre précédent (1 à 6)"
+
+#: src/n5terminal/ui/send_menu.py
+msgid "Next title (1 to 6)"
+msgstr "Titre suivant (1 à 6)"
+
+#: src/n5terminal/ui/settings_actions.py
+msgid "The language will change at the next start."
+msgstr "La langue changera au prochain démarrage."
+
+#: src/n5terminal/ui/shortcuts_page.py
+msgid "Commands to show"
+msgstr "Commandes à afficher"
+
+#: src/n5terminal/ui/shortcuts_page.py
+msgid "Shortcut list"
+msgstr "Liste des raccourcis"
+
+#: src/n5terminal/ui/shortcuts_page.py
+msgid "Press the new shortcut here"
+msgstr "Appuyez ici sur le nouveau raccourci"
+
+#: src/n5terminal/ui/shortcuts_page.py
+msgid "Restore the default shortcut"
+msgstr "Rétablir le raccourci par défaut"
+
+#: src/n5terminal/ui/shortcuts_page.py
+msgid "No shortcut"
+msgstr "Aucun raccourci"
+
+#: src/n5terminal/ui/ssh_dialog.py
+msgid "ssh.exe used"
+msgstr "ssh.exe utilisé"
+
+#: src/n5terminal/ui/ssh_dialog.py
+msgid "ssh.exe path"
+msgstr "Chemin de ssh.exe"
+
+#: src/n5terminal/ui/variables_dialog.py
+#, python-brace-format
+msgid "Variables of the profile {name}"
+msgstr "Variables du profil {name}"
+
+#~ msgid "Startup"
+#~ msgstr "Démarrage"
+
+#~ msgid "Size of the terminal"
+#~ msgstr "Taille du terminal"
+
+#~ msgid "Movement in the output"
+#~ msgstr "Déplacement dans la sortie"
+
+#~ msgid "No further movement possible"
+#~ msgstr "Plus de déplacement possible"
+
+#~ msgid "Key sent"
+#~ msgstr "Touche envoyée"
+
+#~ msgid "Output exported to {file}."
+#~ msgstr "Sortie exportée vers {file}."
+
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Disconnect"
+msgstr "Se déconnecter"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Choose the free profile"
+msgstr "Choisir le profil libre"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Choose the local connection"
+msgstr "Choisir la connexion locale"
+
+#: src/n5terminal/core/config/shortcuts.py
+msgid "Define the variables"
+msgstr "Définir les variables"
+
+#: src/n5terminal/core/config/shortcuts.py src/n5terminal/ui/multiline_dialog.py
+msgid "Multi-line input"
+msgstr "Saisie sur plusieurs lignes"
+
+#: src/n5terminal/ui/main_menu.py
+msgid "Multi-line &input…"
+msgstr "Saisie multili&gne…"
+
+#: src/n5terminal/ui/multiline_dialog.py
+msgid "Lines to send"
+msgstr "Lignes à envoyer"
+
+#: src/n5terminal/presenters/command_label.py
+#, python-brace-format
+msgid "{text} ({count} lines)"
+msgstr "{text} ({count} lignes)"
+
+#: src/n5terminal/presenters/profile_editor.py
+#, python-brace-format
+msgid "The character {character} is not allowed in a name. A name holds letters, digits, spaces and these signs: {signs}"
+msgstr "Le caractère {character} n'est pas permis dans un nom. Un nom contient des lettres, des chiffres, des espaces et ces signes : {signs}"
+
+#: src/n5terminal
+msgid "Previous line without the prompt"
+msgstr "Ligne précédente sans l'invite"
+
+#: src/n5terminal
+msgid "Next line without the prompt"
+msgstr "Ligne suivante sans l'invite"
+
+#: src/n5terminal
+msgid "No previous line."
+msgstr "Pas de ligne précédente."
+
+#: src/n5terminal
+msgid "No next line."
+msgstr "Pas de ligne suivante."
+
+#: src/n5terminal
+msgid "Comfortable &reading"
+msgstr "&Lecture confortable"
+
+#: src/n5terminal
+msgid "&Previous line without the prompt"
+msgstr "Ligne &précédente sans l'invite"
+
+#: src/n5terminal
+msgid "&Next line without the prompt"
+msgstr "Ligne &suivante sans l'invite"
+
+#: src/n5terminal
+msgid "Command pro&mpts…"
+msgstr "&Invites de commande…"
+
+#: src/n5terminal
+msgid "Command prompts"
+msgstr "Invites de commande"
+
+#: src/n5terminal
+msgid "Prompt patterns, in the order they are tried"
+msgstr "Motifs d'invite, dans l'ordre où ils sont essayés"
+
+#: src/n5terminal
+msgid "Add a pattern…"
+msgstr "Ajouter un motif…"
+
+#: src/n5terminal
+msgid "Edit the pattern…"
+msgstr "Modifier le motif…"
+
+#: src/n5terminal
+msgid "Remove the pattern"
+msgstr "Supprimer le motif"
+
+#: src/n5terminal
+msgid "Move up"
+msgstr "Monter"
+
+#: src/n5terminal
+msgid "Move down"
+msgstr "Descendre"
+
+#: src/n5terminal
+msgid "Restore the start list"
+msgstr "Rétablir la liste de départ"
+
+#: src/n5terminal
+msgid "Include the formatting"
+msgstr "Inclure la mise en forme"
+
+#: src/n5terminal
+msgid "Add a pattern"
+msgstr "Ajouter un motif"
+
+#: src/n5terminal
+msgid "Edit the pattern"
+msgstr "Modifier le motif"
+
+#: src/n5terminal
+msgid "Pattern (regular expression)"
+msgstr "Motif (expression régulière)"
+
+#: src/n5terminal
+msgid "Line to try"
+msgstr "Ligne d'essai"
+
+#: src/n5terminal
+msgid "Result"
+msgstr "Résultat"
+
+#: src/n5terminal
+msgid "Pattern refused"
+msgstr "Motif refusé"
+
+#: src/n5terminal
+msgid "The pattern cannot be empty."
+msgstr "Le motif ne peut pas être vide."
+
+#: src/n5terminal
+#, python-brace-format
+msgid "The pattern is not a valid regular expression: {error}"
+msgstr "Le motif n'est pas une expression régulière valable : {error}"
+
+#: src/n5terminal
+msgid "Another pattern already has this name."
+msgstr "Un autre motif a déjà ce nom."
+
+#: src/n5terminal
+msgid "No prompt found in this line."
+msgstr "Aucune invite trouvée dans cette ligne."
+
+#: src/n5terminal
+msgid "Prompt found, nothing is left."
+msgstr "Invite trouvée, il ne reste rien."
+
+#: src/n5terminal
+#, python-brace-format
+msgid "Read as: {rest}"
+msgstr "Lu comme : {rest}"
+
+#: src/n5terminal
+msgid "prompt"
+msgstr "invite"
+
+#: src/n5terminal/ui/prompt_patterns_dialog.py
+msgid "Replacement (said instead of the prompt)"
+msgstr "Remplacement (dit à la place de l'invite)"
+
+#: src/n5terminal/ui/prompt_patterns_dialog.py
+msgid "Result (F1 to hear)"
+msgstr "Résultat (F1 pour entendre)"
+
+#: src/n5terminal/ui/prompt_patterns_dialog.py
+msgid "Nothing to try yet."
+msgstr "Rien à essayer pour l'instant."
+
+#: src/n5terminal/ui/prompt_patterns_dialog.py
+msgid "Include the formatting of the activities"
+msgstr "Inclure les mises en forme d'activités"
+
+#: src/n5terminal/ui/prompt_patterns_dialog.py
+msgid "Comfortable reading for the moves by titles"
+msgstr "Lecture confortable pour les déplacements par titres"
+
+#: src/n5terminal/core/config/prompt_patterns.py
+msgid "Continuation"
+msgstr "Suite"
+
+#: src/n5terminal/ui/prompt_patterns_dialog.py
+msgid "Restore the start patterns"
+msgstr "Rétablir les motifs de départ"
+
+#: src/n5terminal
+msgid "&Previous line, with filtering"
+msgstr "Ligne &précédente, avec filtrage"
+
+#: src/n5terminal
+msgid "&Next line, with filtering"
+msgstr "Ligne &suivante, avec filtrage"
+
+#: src/n5terminal
+msgid "Line &filtering…"
+msgstr "&Filtrage de ligne…"
+
+#: src/n5terminal
+msgid "Previous line, with filtering"
+msgstr "Ligne précédente, avec filtrage"
+
+#: src/n5terminal
+msgid "Next line, with filtering"
+msgstr "Ligne suivante, avec filtrage"
+
+#: src/n5terminal
+msgid "Line filtering"
+msgstr "Filtrage de ligne"
+
+#: src/n5terminal
+msgid "Filters, in the order they are tried"
+msgstr "Filtres, dans l'ordre où ils sont essayés"
+
+#: src/n5terminal
+msgid "Add a filter…"
+msgstr "Ajouter un filtre…"
+
+#: src/n5terminal
+msgid "Edit the filter…"
+msgstr "Modifier le filtre…"
+
+#: src/n5terminal
+msgid "Remove the filter"
+msgstr "Supprimer le filtre"
+
+#: src/n5terminal
+msgid "Restore the start filters"
+msgstr "Rétablir les filtres de départ"
+
+#: src/n5terminal
+msgid "Add a filter"
+msgstr "Ajouter un filtre"
+
+#: src/n5terminal
+msgid "Edit the filter"
+msgstr "Modifier le filtre"
+
+#: src/n5terminal
+msgid "Filter refused"
+msgstr "Filtre refusé"
+
+#: src/n5terminal
+msgid "Another filter already has this name."
+msgstr "Un autre filtre a déjà ce nom."
+
+#: src/n5terminal/ui/find_dialog.py
+msgid "Text to search"
+msgstr "Recherche du texte"
+
+#: src/n5terminal/ui/find_dialog.py
+msgid "Search upwards"
+msgstr "Chercher vers le haut"
+
+#: src/n5terminal/ui/find_dialog.py
+msgid "Regular expression"
+msgstr "Expression régulière"
+
+#: src/n5terminal/ui/find_dialog.py
+msgid "Search refused"
+msgstr "Recherche refusée"
+
+#: src/n5terminal/ui/find_dialog.py
+#, python-brace-format
+msgid "The regular expression is not valid: {error}"
+msgstr "L'expression régulière n'est pas valable : {error}"

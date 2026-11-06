@@ -1,0 +1,21 @@
+{
+  "program": "pip",
+  "launch_mode": "cli",
+  "interpreter": "none",
+  "terminal_size": "auto",
+  "terminal_view_only": false,
+  "stderr_prefix": true,
+  "variables": [],
+  "commands": [
+    "--help",
+    "--version",
+    "check",
+    "freeze",
+    "install --upgrade r {source}",
+    "install -r requirements.txt",
+    "list",
+    "pip install {source}",
+    "show {name}",
+    "uninstall {name}"
+  ]
+}
